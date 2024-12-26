@@ -1,0 +1,17 @@
+// Prompt the user for their details
+const name = prompt("Enter your Name:");
+const age = prompt("Enter your Age:");
+const rollNumber = prompt("Enter your Roll Number:");
+const department = prompt("Enter your Department:");
+
+// Prepare the HTML content to display the user information
+const userInfoHTML = `
+    <h2>User Information</h2>
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Age:</strong> ${age}</p>
+    <p><strong>Roll Number:</strong> ${rollNumber}</p>
+    <p><strong>Department:</strong> ${department}</p>
+`;
+
+// Dynamically display the collected information on the webpage
+document.getElementById("user-info").innerHTML = userInfoHTML;
