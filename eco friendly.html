@@ -24,7 +24,7 @@
     <nav>
         <a href="#home">Home</a> <!-- Link to Home Section -->
         <a href="#products">Products</a> <!-- Link to Products Section -->
-        <a href="#about-us">About Us</a> <!-- Link to About Us Section -->
+        <a href="#about">About Us</a> <!-- Link to About Us Section -->
         <a href="#team">Our Team</a> <!-- Link to Team Section -->
         <a href="#contact">Contact</a> <!-- Link to Contact Section -->
     </nav>
@@ -213,61 +213,57 @@
     
     <!-- Team Section -->
     <section id="team">
-        <h2>Meet Our Team</h2>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="nanditaa.jpg" alt="Nanditaa" class="team-photo">
-                <h3>Nanditaa P.S</h3>
-                
+    <br>
+    <br>
+                <h2>Meet Our Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <h3>Nanditaa P.S</h3><br><p>Web developer</p>
+                        
+                    </div>
+                    <div class="team-member">
+                        <h3>Rohita .S</h3><br><p>Web developer</p>
+                        
+                    </div>
+                    <div class="team-member">
+                        <h3>Rethanya .V</h3><br><p>UI/UX Designer</p>
+                        
+                    </div>
+                    <div class="team-member">
+                        <h3>Neema Sree .K</h3><br><p>Javascript Developer</p>
+                        
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>For inquiries, please email us at eco@ecovault.com</p>
+            </section>
+        
+            <div id="cart-icon" class="cart-icon" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-counter" class="cart-counter">0</span>
             </div>
-            <div class="team-member">
-                <img src="" alt="" class="team-photo">
-                <h3>Rohita .S</h3>
-                
+            
+            <!-- Cart Modal -->
+            <div id="cart-modal" class="cart-modal" style="display: none;">
+                <div class="cart-modal-content">
+                    <span class="close-btn" onclick="closeCart()">&times;</span>
+                    <h3>Your Cart</h3>
+                    <ul id="cart-items">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </ul>
+                    <p>Total: $<span id="total-price">0</span></p>
+                    <button onclick="checkout()">Checkout</button>
+                </div>
             </div>
-            <div class="team-member">
-                <img src="rethanya.jpg" alt="Rethanya" class="team-photo">
-                <h3>Rethanya .V</h3>
-                
-            </div>
-            <div class="team-member">
-                <img src="neemasree.jpg" alt="Neema" class="team-photo">
-                <h3>Neema Sree .K</h3>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>For inquiries, please email us at eco@ecovault.com</p>
-    </section>
-
-    <!-- Cart Icon Button -->
-    <div id="cart-icon" class="cart-icon" onclick="toggleCart()">
-        <i class="fas fa-shopping-cart"></i>
-        <span id="cart-counter" class="cart-counter">0</span>
-    </div>
-
-    <!-- Cart Modal -->
-    <div id="cart-modal" class="cart-modal">
-        <div class="cart-modal-content">
-            <span class="close-btn" onclick="closeCart()">&times;</span>
-            <h3>Your Cart</h3>
-            <ul id="cart-items">
-                <!-- Cart items will be dynamically inserted here -->
-            </ul>
-            <p>Total: $<span id="total-price">0</span></p>
-            <button onclick="checkout()">Checkout</button>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Eco-Friendly Store. All Rights Reserved.</p>
-    </footer>
-
-    <script src="ADD project.js"></script> <!-- Link to JS file -->
-</body>
-</html>
+        
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2024 Eco-Friendly Store. All Rights Reserved.</p>
+            </footer>
+            <script src="ADD project.js"></script>
+        </body>
+        </html>
